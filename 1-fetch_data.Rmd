@@ -18,4 +18,5 @@ library(tidyverse)
 Load input table containing the information for each studied species.
 ```{r input}
 input_table <- read.table("data/input_data.tsv",sep="\t",header=T)
+
 ```
