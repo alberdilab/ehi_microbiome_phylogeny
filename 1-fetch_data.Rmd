@@ -1,0 +1,21 @@
+---
+title: "Fetch data from EHI"
+author: "Antton Alberdi"
+date: "2023-11-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This Markdown document contains the R code for fetching data from the EHI for the microbiome community analyses in light of host phylogeny.
+
+```{r libraries}
+library(tidyverse)
+```
+
+Load input table containing the information for each studied species.
+```{r input}
+input_table <- read.table("data/input_data.tsv",sep="\t",header=T)
+```
